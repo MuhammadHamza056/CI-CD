@@ -7,7 +7,12 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(child: Text("hy")),
+      body: Column(
+        children: [
+          Center(child: Text("hy")),
+          ElevatedButton(onPressed: () {}, child: Text("save")),
+        ],
+      ),
     );
   }
 }
