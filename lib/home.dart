@@ -6,13 +6,13 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: Column(
-        children: [
-          Center(child: Text("hy")),
-          ElevatedButton(onPressed: () {}, child: Text("save")),
-        ],
+      floatingActionButton: FloatingActionButton.extended(
+        icon: Icon(Icons.add),
+        onPressed: () {},
+        label: Text("Save"),
       ),
+      backgroundColor: Colors.white,
+      body: Column(children: [Center(child: Text("hy"))]),
     );
   }
 }
